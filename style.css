@@ -630,23 +630,52 @@ footer{
 footer .container{
     display: flex;
     justify-content: space-between;
+    height: 96px;
+    align-items: center;
 }
 footer p{
     font-size: 14px;
-    line-height: 95px;
-    color: #ffffff;
-    height: 95px;
-    
+    line-height: 26px;
+    color: rgba(255,255,255,0.8);
 }
-footer ul{
-    height: 95px;   
-}
+
 footer ul li{
     display: inline-block;
+    margin-right: 20px;
+}
+footer ul li:last-child{
+    margin-right: 0;
 }
 footer ul li a{
-    display: inline-block;
+   color: rgba(255,255,255,0.8);
+   height: 20px;
+   width: 20px;
+   display: block;
+   text-indent: -10000px;
 }
+
+footer  ul li:nth-child(1) a{
+    background:center url(images/socials/twitter.png) no-repeat;
+    background-size: contain;
+}
+footer  ul li:nth-child(2) a{
+    background:center url(images/socials/facebook.png) no-repeat;
+    background-size: contain;
+}
+footer  ul li:nth-child(3) a{
+    background:center url(images/socials/skype.png) no-repeat;
+    background-size: contain;
+}
+footer  ul li:nth-child(4) a{
+    background:center url(images/socials/behance.png) no-repeat;
+    background-size: contain;
+}
+footer  ul li:nth-child(5) a{
+    background:center url(images/socials/linkedin.png) no-repeat;
+    background-size: contain;
+}
+
+
 /* RESPONSIVE */
 @media screen and (max-width:1100px) {
     #about > div {
